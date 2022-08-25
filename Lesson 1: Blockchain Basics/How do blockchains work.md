@@ -37,12 +37,18 @@ The teacher also realises, that the problem was too easy for the kids. For the n
 345+?=379
 
 Now, coming back to blockchain:
-
+<br/>
 miners are like the students, competing with each other to solve a problem to earn their chocolate (block rewards paid in bitcoins)
-“3” is the nonce - a number that can be used only once; a proof that you’ve indeed solved the problem by doing some work. In the case of the school , you did the work by cranking up your brain
-“28” is the difficulty level, which ensures the teacher has a control over the number of chocolates distributed.
+<br/>
+“3” is the nonce - a number that can be used only once; a proof that you’ve indeed solved the problem by doing some work. In the case of the school , you did the work by cranking up your brain<br/>
+
+“28” is the difficulty level, which ensures the teacher has <br/>
+a control over the number of chocolates distributed.
+<br/>
 Too easy = too many chocolates to be given away
+<br/>
 Too difficult = children will lose interest
+<br/>
 Blockchain uses the difficulty level to control the generation of 1 block/~ 10 minutes
 </sub>
 
