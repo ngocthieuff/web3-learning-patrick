@@ -17,25 +17,25 @@ The first block in a blockchain.
 Let’s assume you are in grade-1. Your teacher has asked the students, in your class, to solve this problem:
 
 25+? = 28
-
+<br/>
 There is a chocolate to be given away to the 1st student to solve the problem. You are salivating at the thought of the chocolate, and the grey cells are starting to fire.
-
+<br/>
 You immediately get to work. Having learnt basic arithmetic, you start with a brute-force method, like this:
-
+<br/>
 25+1= 28? No…
-
+<br/>
 25+2=28? No…
-
+<br/>
 25+3=28? Yes…
-
+<br/>
 You raise your hand, give a shout and say “yes”. I’ve solved it…
-
+<br/>
 Unfortunately, some other kid has solved it before you, and walks away with the chocolate.
-
+<br/>
 The teacher also realises, that the problem was too easy for the kids. For the next chocolate, she increases the difficulty level. This time your class is asked to solve:
-
+<br/>
 345+?=379
-
+<br/>
 Now, coming back to blockchain:
 <br/>
 miners are like the students, competing with each other to solve a problem to earn their chocolate (block rewards paid in bitcoins)
