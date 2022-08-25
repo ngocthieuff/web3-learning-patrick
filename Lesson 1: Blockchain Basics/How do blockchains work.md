@@ -13,6 +13,7 @@ The first block in a blockchain.
 
 **nonce** - a **n**umber that can be used only **once**; a proof that you’ve indeed solved the problem by doing some work.
 
+<div style="font-size: 12px">
 Let’s assume you are in grade-1. Your teacher has asked the students, in your class, to solve this problem:
 <br/>
 25+? = 28
@@ -49,6 +50,7 @@ Too easy = too many chocolates to be given away
 Too difficult = children will lose interest
 <br/>
 Blockchain uses the difficulty level to control the generation of 1 block/~ 10 minutes
+</div>
 
 ### Reference:
 - [Blockchain Demo](https://andersbrownworth.com/blockchain/)
