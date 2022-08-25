@@ -11,7 +11,9 @@ The first block in a blockchain.
 
 ### Nonce:
 
-**nonce** - a **n**umber that can be used only **once**; a proof that you’ve indeed solved the problem by doing some work.
+A "number used once" to find the "solution" to the blockchain problem.
+
+It's also used to define the transaction number for an account/address.
 
 <div style="font-size: 10px">
 Let’s assume you are in grade-1. Your teacher has asked the students, in your class, to solve this problem:
@@ -51,6 +53,24 @@ Too difficult = children will lose interest
 <br/>
 Blockchain uses the difficulty level to control the generation of 1 block/~ 10 minutes
 </div>
+
+### Mining :factory:
+
+The process of finding the "solution" to the blockchain "problem".
+
+In our example, the "problem" was to find a hash that starts with four zeros.
+
+Nodes get paid for mining blocks.
+
+### Block:
+
+A list of transactions mined together.
+
+<img src="/images/lession1_blockchain_basic/block_example.png">
+
+### Decentralized:
+
+Having no single point of authority.
 
 ### Reference:
 - [Blockchain Demo](https://andersbrownworth.com/blockchain/)
