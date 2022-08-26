@@ -48,6 +48,32 @@ Sybil resistance mechanism + chain selection rule = a true consensus mechanism
 - Is used to decide which chain is the "correct" chain.
 - The most difficult chain, maybe.
 
+### Sharding:
+
+Sharding splits a blockchain company's entire network into smaller partitions, known as "**shards**".
+
+Sharding is a solution to the scalability problem, a sharded blockchain really just means that it's going to be a blockchain of blockchains.
+
+There is main chain thats going to coordinate everything amongst several chains that hook into this main chain. This means that there's more chains for people to make transactions on, effectively increasing the amount of block space. Sharding can greatly increase the number of transactions on a blockchain layer one.
+
+#### Layer 1:
+
+Base layer blockchain implementation.
+
+#### Layer 2: 
+
+Any application built on top of a layer 1.
+
+### Recap:
+
+The bigger the blockchain, the more secure.
+
+Sharding and Rollups are scalability solution.
+
+Only so many transactions can fit into a block.
+
+Gas prices are how much it costs to perform executions on-chain.
+
 ### Reference: 
 
 - [Understanding Blockchain Consensus Mechanisms](https://www.youtube.com/watch?v=ojxfbN78WFQ)
