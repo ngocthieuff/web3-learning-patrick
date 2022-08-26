@@ -1,4 +1,4 @@
-# Down to Rabbit hole - Solidity
+# Down to Rabbit hole - Solidity :rabbit:
 
 ### Visibility and Getters:
 
@@ -78,8 +78,11 @@ const  pureAddToObj = (obj, key, val) => {
 }
 ```
 
+
+
 ### Reference:
 
 - [external-vs-public-best-practices](https://ethereum.stackexchange.com/questions/19380/external-vs-public-best-practices)
 - [Contracts Soliditylang Docs](https://docs.soliditylang.org/en/v0.8.10/contracts.html)
 - [Pure vs Impure Functions](https://dev.to/sanspanic/pure-vs-impure-functions-50aj)
+- [Deploy & Run](https://remix-ide.readthedocs.io/en/latest/udapp.html)
