@@ -102,6 +102,111 @@ The functions buttons can have different color buttons
 - create new transaction and accept `value`
 - the `value` is put in in the Value field which is under the `Gas Limit` field (in above image)
 
+### Arrays & Structs:
+
+#### 1. Fixed Size Array
+
+Once declared, the array size cannot be changed
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.10;
+contract DemoContract 
+{
+    // Inline Initialization
+    uint[3] public age = [8,15,32];
+    string[3] public name; 
+    uint[4] public flag;
+    function initializeName() public
+    {
+        name = ["Sunny","Bob","Lilly"];
+    }
+    function initializeFlag() public
+    {
+       flag[0] = 21;
+       flag[1] = 34;
+       flag[2] = 65;
+       flag[3] = 12;
+    }
+    
+}
+```
+
+#### 2. Dynamic Array
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.10;
+contract DemoContract 
+{
+    // Dynamic Array
+    uint[] public flag;
+
+    // Dynamic Array with first 3 elements initialized
+    uint[] public age = [8,15,32];
+
+     // Dynamic Array initialized with new keyword
+    int[] public num = new int[]();
+}
+```
+
+### Memory, Storage, Calldata:
+
+:sparkles: EVM can access and store information in six place:
+
+1. Stack
+2. Memory
+3. Storage
+4. Calldata
+5. Code
+6. Logs
+
+In which:
+
+:palm_tree: `storage` - variable is a state variable (store on blockchain)
+:cyclone: `memory` - variable is in memory and it exists while a function is being called
+:zap: `calldata` - special data location that contains function arguments
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.13;
+
+contract DataLocations {
+    uint[] public arr;
+    mapping(uint => address) map;
+    struct MyStruct {
+        uint foo;
+    }
+    mapping(uint => MyStruct) myStructs;
+
+    function f() public {
+        // call _f with state variables
+        _f(arr, map, myStructs[1]);
+
+        // get a struct from a mapping
+        MyStruct storage myStruct = myStructs[1];
+        // create a struct in memory
+        MyStruct memory myMemStruct = MyStruct(0);
+    }
+
+    function _f(
+        uint[] storage _arr,
+        mapping(uint => address) storage _map,
+        MyStruct storage _myStruct
+    ) internal {
+        // do something with storage variables
+    }
+
+    // You can return memory variables
+    function g(uint[] memory _arr) public returns (uint[] memory) {
+        // do something with memory array
+    }
+
+    function h(uint[] calldata _arr) external {
+        // do something with calldata array
+    }
+}
+```
 
 ### Reference:
 
@@ -109,3 +214,4 @@ The functions buttons can have different color buttons
 - [Contracts Soliditylang Docs](https://docs.soliditylang.org/en/v0.8.10/contracts.html)
 - [Pure vs Impure Functions](https://dev.to/sanspanic/pure-vs-impure-functions-50aj)
 - [Deploy & Run](https://remix-ide.readthedocs.io/en/latest/udapp.html)
+- [Data Locations - Storage, Memory and Calldata](https://solidity-by-example.org/data-locations/)

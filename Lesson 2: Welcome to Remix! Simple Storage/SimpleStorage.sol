@@ -17,6 +17,17 @@ contract SimpleStorage {
 
     // public keyword made it visible after deploying
     uint256 public favoriteNumber;
+    // People public person = People({
+    //     favoriteNumber: 2210,
+    //     name: "Ngoc Thieu"
+    // });
+
+    struct People {
+        uint256 favoriteNumber;
+        string name;
+    }
+
+    People[] public people;
 
     // public variable implicity get assigned a function that returns its value
     function store(uint256 _favoriteNumber) public {
@@ -37,4 +48,25 @@ contract SimpleStorage {
     function retrieve() public view returns(uint256){
         return favoriteNumber;
     }
+
+    function addPerson(string memory _name, uint256 _favoriteNumber) public {
+        // TypeError: Data location must be "storage", "memory" or "calldata" for variable, 
+        // but none was given
+        // if we use this: People newPerson = People({ favoriteNumber: _favoriteNumber, name: _name});
+        People memory newPerson = People({ favoriteNumber: _favoriteNumber, name: _name});
+        people.push(newPerson);
+    }
+
+    // ----------------------------------------------------------------------------------------------------------------------------------
+    // calldata, memory, storage
+
+    // function addPerson(string memory _name, uint256 _favoriteNumber) public {
+    // why we put memory before _name but not _favoriteNumber???
+    // try it out, we will have TypeError: Data location can only be specified for array, struct or mapping types, but "memory" was given.
+    
+    // array, struct, mapping types are considered special types
+    // solidity knows int256 is going to live just in memory
+    // however, it's not sure what a string is going to be, strings are actually kind of complicated
+    // behind the scene, string is actually an array of bytes.
+    // ----------------------------------------------------------------------------------------------------------------------------------
 }
