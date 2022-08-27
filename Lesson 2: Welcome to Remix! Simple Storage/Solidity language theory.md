@@ -78,6 +78,29 @@ const  pureAddToObj = (obj, key, val) => {
 }
 ```
 
+### Deployed contracts:
+
+The functions buttons can have different color buttons
+
+<img src="/images/lession2_remix/button_color.png" />
+
+<span style="color: white; background-color: steelblue; font-weight: bold; font-size: 20px;">&nbsp;Blue button&nbsp;</span>
+
+- `constant` or `pure` function
+- clicking one of this type <span style="color: steelblue; font-weight: bold;">does not create a new transaction</span> 
+- not change state - only return a value stored in the contract - <span style="color: steelblue; font-weight: bold;">won't cost you anything in gas fees</span>
+
+<span style="color: white; background-color: darkorange; font-weight: bold; font-size: 20px;">&nbsp;Orange button&nbsp;</span>
+
+- `non-payable` function
+- change state of contract
+- <span style="color: darkorange; font-weight: bold;">does not accept Ether</span>
+- create new transaction and thus <span style="color: darkorange; font-weight: bold;">cost gas</span>
+
+<span style="color: white; background-color: tomato; font-weight: bold; font-size: 20px;">&nbsp;Red button&nbsp;</span>
+
+- create new transaction and accept `value`
+- the `value` is put in in the Value field which is under the `Gas Limit` field (in above image)
 
 
 ### Reference:

@@ -21,11 +21,19 @@ contract SimpleStorage {
     // public variable implicity get assigned a function that returns its value
     function store(uint256 _favoriteNumber) public {
         favoriteNumber = _favoriteNumber;
+        
         // example about gas, if we add
         // favoriteNumber = favoriteNumber + 1
         // we will see that doing more things, this store function is now more computationally expensive
+    
+        // retrieve();
     }
 
+    // view, pure
+    // view and pure functions, when called alone, don't spend gas
+    // if we do have a function that calls retrieve, if there's a function
+    // that is updating state that calls a view or a pure function,
+    // that's the only time it'll cost gas
     function retrieve() public view returns(uint256){
         return favoriteNumber;
     }
