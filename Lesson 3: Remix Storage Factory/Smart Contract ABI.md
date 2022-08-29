@@ -25,6 +25,21 @@ bytecode <-------------ABI-------------> high-level languages
 
 <img src="/images/lession3_storage_factory/abi%20communication.png" />
 
+### API vs. ABI:
+
+Web2 have centralized sources of information. Hence, they easily feed data to applications by request using API.
+
+However, the core property of blockchains is decentralization. There are nodes that act as servers, no centralized source of data at all. You can also view them as on-chain "hosted" functions.
+So, a contract ABI enables off-chain apps and other smart contracts to communicate with that contract.
+
+In a way, ABIs are APIs’ cousins.
+
+ABI acts as a function selector. It defines the specific method that an app or a dapp can call. Then response by executing specific function.
+
+Furthermore, a generated JSON RPC file lists these specific methods and the data types connected to them. The image below clearly displays how the details of a smart contract are converted into a contract ABI:
+
+<img src="/images/lession3_storage_factory/abi%20json%20rpc.png" />
+
 ### Reference: 
 
 - [What is a Smart Contract ABI? Full Guide](https://moralis.io/what-is-a-smart-contract-abi-full-guide/)
