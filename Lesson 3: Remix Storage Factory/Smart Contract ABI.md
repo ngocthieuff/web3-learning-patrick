@@ -40,6 +40,16 @@ Furthermore, a generated JSON RPC file lists these specific methods and the data
 
 <img src="/images/lession3_storage_factory/abi%20json%20rpc.png" />
 
+### Contract ABI – a Bytecode “Translator”:
+
+As mentioned above, smart contracts only communicate in bytecode.:zap:
+
+Hence, unlike with an API, we can't send request directly in JSON format. the latter must be encoded into the language that EVM understands. This process is done via ABI encoding.
+
+Of course, the responses are also in the bytecode. Interpretation needs to take place before a response can be processed by a web app.
+
+<img src="/images/lession3_storage_factory/contract%20compile.png" />
+
 ### Reference: 
 
 - [What is a Smart Contract ABI? Full Guide](https://moralis.io/what-is-a-smart-contract-abi-full-guide/)
