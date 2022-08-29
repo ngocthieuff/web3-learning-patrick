@@ -164,7 +164,9 @@ contract DemoContract
 In which:
 
 :palm_tree: `storage` - variable is a state variable (store on blockchain)
+<br/>
 :cyclone: `memory` - variable is in memory and it exists while a function is being called
+<br/>
 :zap: `calldata` - special data location that contains function arguments
 
 ```solidity
@@ -207,6 +209,10 @@ contract DataLocations {
     }
 }
 ```
+
+### Basic Solidity Mappings
+
+A mapping is a data structure where a key is "mapped" to a single value
 
 ### Reference:
 
