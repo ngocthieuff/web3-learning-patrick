@@ -29,8 +29,10 @@ contract SimpleStorage {
 
     People[] public people;
 
+    mapping(string => uint256) public nameToFavoriteNumber;
+
     // public variable implicity get assigned a function that returns its value
-    function store(uint256 _favoriteNumber) public {
+    function store(uint256 _favoriteNumber) public virtual {
         favoriteNumber = _favoriteNumber;
         
         // example about gas, if we add
@@ -55,6 +57,7 @@ contract SimpleStorage {
         // if we use this: People newPerson = People({ favoriteNumber: _favoriteNumber, name: _name});
         People memory newPerson = People({ favoriteNumber: _favoriteNumber, name: _name});
         people.push(newPerson);
+        nameToFavoriteNumber[_name] = _favoriteNumber;
     }
 
     // ----------------------------------------------------------------------------------------------------------------------------------
