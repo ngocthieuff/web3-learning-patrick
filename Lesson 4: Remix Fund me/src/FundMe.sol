@@ -24,5 +24,6 @@ contract FundMe {
         // but if require has not met
         // meaning "Didn't send enough"
         // so, we will see the error is: "The transaction has been reverted to the initial state"
+        // but it costed gas for set state of number -> send remaining gas back
     }
 }
