@@ -19,6 +19,16 @@ This is known as Smart contract connectivity problem, or the Oracle problem.
 
 <img src="/images/lesson4_remix_fund_me/Smart%20contracts%20are%20currently%20unable%20to%20connect%20with%20relevant%20external%20events,%20APIs,%20andor%20payment%20methods.png" />
 
+So, this is where Chainlink and blockchain Oracle come into place.
+
+**Blockchain Oracle**: any device that interacts with the off-chain world to provide external data or computation to smart contracts.
+
+<img src="/images/lesson4_remix_fund_me/centralized_point_of_failure.png" />
+
+However, the whole story doesn't even in there. If we use a centralized Oracle, we are reintroducing a point of failure. We've done all this work to make our logic layer decentralized. But if we get our data through a centralized node or through a centralized API, we're essentially ruining the entire purpose of building a smart contract.
+
+<img src="/images/lesson4_remix_fund_me/oracle%20decentralized.png" />
+
 ### Reference:
 
 - [Learn Blockchain, Solidity, and Full Stack Web3 Development with JavaScript](https://youtu.be/gyMwXuJrbJQ?t=13457)
