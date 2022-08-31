@@ -29,6 +29,21 @@ However, the whole story doesn't even in there. If we use a centralized Oracle, 
 
 <img src="/images/lesson4_remix_fund_me/oracle%20decentralized.png" />
 
+
+### Chainlink VRF (Verifiable Random Function):
+
+Securing Randomness for your applications.
+
+#### 1. Random Number Generator:
+
+<img src="/images/lesson4_remix_fund_me/malicious%20rng%20operators%20are%20a%20risk.png" />
+
+Randomness can be manipulated in blockchain.
+
+So, we need to wait to get a provably random number by looking outside of the blockchain. 
+
+<img src="/images/lesson4_remix_fund_me/Chainlink-VRF-uses-open-source-code-and-cryptography.png" />
+
 ### Reference:
 
 - [Learn Blockchain, Solidity, and Full Stack Web3 Development with JavaScript](https://youtu.be/gyMwXuJrbJQ?t=13457)
