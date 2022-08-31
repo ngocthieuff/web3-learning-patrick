@@ -50,6 +50,16 @@ Decentralized Event-Driven Execution
 
 <img src="/images/lesson4_remix_fund_me/chainlink%20keepers.png" />
 
+As we've seen, in order to kick off some type of transactions, somebody needs to spend the gas and somebody needs to sitdown and hit the go button or hit the transact button.
+
+But this is obviously a centralized vector.
+
+If you have a decentralized application that needs to run at specific times, or after specific events are triggered.
+
+The solution is Chainlink Keepers. :beers:
+
+Chainlink Keepers are chainlink nodes that listen to a registration contract for different events that you specify to fire.
+
 ### Reference:
 
 - [Learn Blockchain, Solidity, and Full Stack Web3 Development with JavaScript](https://youtu.be/gyMwXuJrbJQ?t=13457)
