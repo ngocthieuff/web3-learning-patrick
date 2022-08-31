@@ -44,6 +44,12 @@ So, we need to wait to get a provably random number by looking outside of the bl
 
 <img src="/images/lesson4_remix_fund_me/Chainlink-VRF-uses-open-source-code-and-cryptography.png" />
 
+### Chainlink Keepers:
+
+Decentralized Event-Driven Execution
+
+<img src="/images/lesson4_remix_fund_me/chainlink%20keepers.png" />
+
 ### Reference:
 
 - [Learn Blockchain, Solidity, and Full Stack Web3 Development with JavaScript](https://youtu.be/gyMwXuJrbJQ?t=13457)
