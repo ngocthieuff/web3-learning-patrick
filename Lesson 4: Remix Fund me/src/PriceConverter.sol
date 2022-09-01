@@ -2,9 +2,11 @@
 pragma solidity ^0.8.8;
 
 import "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
+// implementation of this interface is in https://github.com/smartcontractkit/chainlink/blob/e1e78865d4f3e609e7977777d7fb0604913b63ed/contracts/src/v0.8/dev/DerivedPriceFeed.sol
 
 // Why is this a library and not abstract?
 // Why not an interface?
+// https://solidity-by-example.org/library/
 library PriceConverter {
     // We could make this public, but then we'd have to deploy it
     function getPrice() internal view returns (uint256) {
