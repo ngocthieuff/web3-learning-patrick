@@ -41,7 +41,7 @@ contract FundMe {
         // figure out how do we actually call instance of us interacting with a contract outside
         // we gonna need two things:
         // - ABI
-        // - address of contract (can be gotten at https://docs.chain.link/docs/ethereum-addresses/)
+        // - address of contract (can be obtained at https://docs.chain.link/docs/ethereum-addresses/)
         // I used Goerli Testnet ETH / USD	address (0xD4a33860578De61DBAbDc8BFdb98FD742fA7028e)
     //}
 
