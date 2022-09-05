@@ -136,6 +136,11 @@ An alternative method of burning tokens is to send the tokens to an address to w
   It can be seen that setting decimals to 3 literally means that when displaying GoldToken balances there should be 3 digits of the balance after the decimal point.
   </sub>
 
+### Libraries: :books:
+
+Libraries in solidity are similar to contracts that contain reusable codes.
+
+
 
 ### Reference:
 
